@@ -1,17 +1,15 @@
 import random
-secret_number = random.randint(1,10)
-guess_count = 0
-guess_limit = 3
-while guess_count < guess_limit:
-    guess = int(input("Guess: "))
-    guess_count += 1
-    if guess == secret_number:
-        print("You won!")
-        break
-    elif guess > secret_number:
-        print("Your guess is too big")
-    elif guess < secret_number:
-        print("Your guess was too small")
-else:
-    print("You lose!")
-    print(f"The secret number was {secret_number}!")
+def guess_number():
+    secret_number + random.randint (1, 25)
+    attempts = 0
+    print("welcome to my number guessing game")
+    print("i have a number in between 1 and 25")
+    
+    while true: 
+        guess = int(input("enter your guess"))
+        attempts += 1
+        if guess < secret_number:
+            print("too low. try again")
+            if guess > secret_number:
+                print("too high. try again")
+                print(f"congratulations! you guessed the number {secret_number} correctly in {attempts} attempts")
